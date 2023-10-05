@@ -129,6 +129,8 @@ def calculate_score():
     round = 0
     for file in os.listdir(directory):
         filename = os.path.join(directory, file)
+        if file == '.gitkeep':
+            continue
         try:
             round_data = pd.read_csv(filename)
             print(f'File {file} opened successfully')
