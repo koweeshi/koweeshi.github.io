@@ -8,26 +8,42 @@
             src: url('static/fonts/supercell-magic-webfont.ttf');
         }
 
-        body {
+        .body {
             font-family: 'SupercellMagic', Arial, sans-serif;
             background-color: #3D2D26;
+            background-image: url('static/images/back.jpg');
+            background-size: cover;
+            background-repeat:repeat-y;
             margin: 0;
             padding: 20px;
         }
 
+        .body::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4);
+            z-index: -1;
+        }
+
         .header {
-            background-image: url('static/images/cover.jpg'); /* Replace with your image URL */
-            background-size: cover; /* Adjust background size as needed */
-            border: thick double #867f77; /* Bounding box border style and color */
-            border-radius: 10px; /* Rounded corners for the bounding box */
+            background-image: url('static/images/cover.jpg');
+            background-size: cover;
+            border: thick double #3D2D26;
+            border-radius: 10px;
             background-repeat: no-repeat;
             background-clip: border-box;
+            background-position: center;
             margin: 0 auto;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
             width: 90%;
+            height: max-content;
             position: relative;
-            
+
         }
 
         .header::before{
@@ -45,7 +61,7 @@
         .header h1 {
             color: #FFD007; /* Text color */
             text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
-            font-size: 24px;
+            font-size: xx-large;
             text-align: center;
             vertical-align: top;
             padding: 0px;
@@ -57,7 +73,7 @@
         .header h2 {
             color: #FFD007; /* Text color */
             text-shadow: 4px 4px 8px rgba(0, 0, 0, 1);
-            font-size: 18px;
+            font-size: x-large;
             text-align: center;
             vertical-align: top;
             padding: 0px 0px 10px 0px;
@@ -68,7 +84,7 @@
         .header h3 {
             color: #ffffff; /* Text color */
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
-            font-size: 12px;
+            font-size: x-large;
             text-align: left;
             vertical-align: text-bottom;
             position: relative;
@@ -77,12 +93,10 @@
 
         /* Add rounded borders and gradient background to table rows */
         table {
-            width: 95%;
+            width: 90%;
             margin: 0 auto;
             border-collapse: separate;
-            background-color: #3D2D26;
             border-spacing: 0 5px;
-            border-radius: 10px;
         }
         th, tr {
             overflow: hidden;
@@ -95,16 +109,28 @@
             font-size: x-small;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
             color: #DB8A4C;
+            /* border-top: 2px solid #5f200e;
+            border-bottom: 2px solid #5f200e; */
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+            min-height: 100px;
         }
         th:first-child, td:first-child {
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
         }
-        
+
         th:last-child, td:last-child {
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
         }
+
+        /* th:first-child {
+            border-left: 2px solid #3D2D26;
+        }
+
+        th:last-child {
+            border-right: 2px solid #3D2D26;
+        } */
 
         td {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
@@ -118,14 +144,31 @@
             font-size: auto;
         }
 
+
         tr {
             background-color: #8C6662;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        tr:first-of-type {
+            background-color: #c5a800;
+            border: 4px solid #c5a800
+        }
+
+        tr:nth-of-type(2) {
+            background-color: #8d8d8d;
+        }
+
+        tr:nth-of-type(3) {
+            background-color: #995f25;
         }
 
         /* Add hover effect to table rows */
         tr:hover {
             border-radius: 10px;
-            background-color: #657998; /* Change to the desired hover background color */
+            background-color: #657998;
+            box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
         }
 
         .center-container {
@@ -152,96 +195,96 @@
         #buttonRow {
             align-items: center;
         }
-        
+
     </style>
 </head>
-<body>
-    <div class = 'header'>
-        <h1>Clan War League</h1>
-        <h2>October 2023 Season</h2>
-        <h3>Round {{ limited_data[0]['Round'] }}/7</h3>
-    </div>
-    
-    <table id = 'scoreboard'>
-        <tr>
-            <th>Position</th>
-            <th>Player</th>
-            <th>Total Stars</th>
-            <th>Destruction %</th>
-            <th>Bonuses</th>
-            <th>Demerit</th>
-        </tr>
-        {% for record in data %}
-        <tr>
-            <td>{{ record['Position'] }}</td>
-            <td>{{ record['Name'] }}</td>
-            <td>{{ record['Total Stars'] }}</td>
-            <td>{{ record['Total Percentage'] }}</td>
-            <td>{{ record['Bonus Awarded'] }}</td>
-            <td>{{ record['Demerit'] }}</td>
-        </tr>
-        {% endfor %}
+    <body class = 'body'>
+        <div class = 'header'>
+            <h1>Clan War League</h1>
+            <h2>October 2023 Season</h2>
+            <h3>Round {{ limited_data[0]['Round'] }}/7</h3>
+        </div>
 
-        
-    </table>
+        <table id = 'scoreboard'>
+            <tr>
+                <th>Position</th>
+                <th>Player</th>
+                <th>Total Stars</th>
+                <th>Destruction %</th>
+                <th>Bonuses</th>
+                <th>Demerit</th>
+            </tr>
+            {% for record in data %}
+            <tr>
+                <td>{{ record['Position'] }}</td>
+                <td>{{ record['Name'] }}</td>
+                <td>{{ record['Total Stars'] }}</td>
+                <td>{{ record['Total Percentage'] }}</td>
+                <td>{{ record['Bonus Awarded'] }}</td>
+                <td>{{ record['Demerit'] }}</td>
+            </tr>
+            {% endfor %}
 
-    <div class="center-container">
-        <button id="showMoreBtn" class="my-button">Show More</button>
-    </div>
 
-    <script>
-        var limitedData = JSON.parse('{{ limited_data | tojson | safe }}');
-        var fullData = JSON.parse('{{ full_data | tojson | safe }}');
-    </script>
-    
-    <script>
-        // JavaScript to handle "Show More" button click
-        const table = document.getElementById('scoreboard');
-        const showMoreBtn = document.getElementById('showMoreBtn');
-        let allRowsVisible = false; 
-    
-        // Function to add rows to the table
-        function addRows(data, startIndex, endIndex) {
-            for (let i = startIndex; i < endIndex; i++) {
-                const record = data[i];
-                const newRow = document.createElement('tr');
-                newRow.innerHTML = `
-                    <td>${record['Position']}</td>
-                    <td>${record['Name']}</td>
-                    <td>${record['Total Stars']}</td>
-                    <td>${record['Total Percentage']}</td>
-                    <td>${record['Bonus Awarded']}</td>
-                    <td>${record['Demerit']}</td>
-                `;
-                table.appendChild(newRow);
-            }
-        }
-    
-        // Show the first 15 rows initially
-        addRows(limitedData, 0, 10);
-    
-        // Function to handle "Show More" button click
-        showMoreBtn.addEventListener('click', () => {
-            if (!allRowsVisible) {
-                // Show all rows
-                addRows(fullData, 10, fullData.length);
-                allRowsVisible = true;
-                showMoreBtn.innerText = 'Show Less';
-            } else {
-                // Hide additional rows
-                const rowCount = table.rows.length;
-                for (let i = rowCount - 1; i > 10; i--) {
-                    table.deleteRow(i);
+        </table>
+
+        <div class="center-container">
+            <button id="showMoreBtn" class="my-button">Show More</button>
+        </div>
+
+        <script>
+            var limitedData = JSON.parse('{{ limited_data | tojson | safe }}');
+            var fullData = JSON.parse('{{ full_data | tojson | safe }}');
+        </script>
+
+        <script>
+            // JavaScript to handle "Show More" button click
+            const table = document.getElementById('scoreboard');
+            const showMoreBtn = document.getElementById('showMoreBtn');
+            let allRowsVisible = false;
+
+            // Function to add rows to the table
+            function addRows(data, startIndex, endIndex) {
+                for (let i = startIndex; i < endIndex; i++) {
+                    const record = data[i];
+                    const newRow = document.createElement('tr');
+                    newRow.innerHTML = `
+                        <td>${record['Position']}</td>
+                        <td>${record['Name']}</td>
+                        <td>${record['Total Stars']}</td>
+                        <td>${record['Total Percentage']}</td>
+                        <td>${record['Bonus Awarded']}</td>
+                        <td>${record['Demerit']}</td>
+                    `;
+                    table.appendChild(newRow);
                 }
-                allRowsVisible = false;
-                showMoreBtn.innerText = 'Show More';
             }
-        });
-    
-        // Show the button initially if there are more than 15 rows
-        if (fullData.length > 10) {
-            showMoreBtn.style.display = 'block';
-        }
-    </script>
-</body>
+
+            // Show the first 15 rows initially
+            addRows(limitedData, 0, 25);
+
+            // Function to handle "Show More" button click
+            showMoreBtn.addEventListener('click', () => {
+                if (!allRowsVisible) {
+                    // Show all rows
+                    addRows(fullData, 25, fullData.length);
+                    allRowsVisible = true;
+                    showMoreBtn.innerText = 'Show Less';
+                } else {
+                    // Hide additional rows
+                    const rowCount = table.rows.length;
+                    for (let i = rowCount - 1; i > 25; i--) {
+                        table.deleteRow(i);
+                    }
+                    allRowsVisible = false;
+                    showMoreBtn.innerText = 'Show More';
+                }
+            });
+
+            // Show the button initially if there are more than 15 rows
+            if (fullData.length > 25) {
+                showMoreBtn.style.display = 'block';
+            }
+        </script>
+    </body>
 </html>

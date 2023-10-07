@@ -4,13 +4,11 @@ import coc
 from datetime import datetime
 import time
 import threading
-import os
 
 app = Flask(__name__)
 app.config['STATIC_FOLDER'] = 'static'
 
 def refresh():
-    time.sleep(30)
     while True:
         print('Retrieving data...')
         rounds = coc.get_cwl_clans()
@@ -30,7 +28,7 @@ refresh_thread.start()
 @app.route('/') 
 def scoreboard():
     df = pd.read_csv(f"{coc.MONTH}_Summary.csv")
-    limited_data = df.head(10).to_dict(orient='records')  # First 15 rows
+    limited_data = df.head(25).to_dict(orient='records')  # First 15 rows
     full_data = df.to_dict(orient='records')  # All rows
     return render_template('scoreboard.html', limited_data=limited_data, full_data=full_data)
 

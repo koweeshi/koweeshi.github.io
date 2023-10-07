@@ -17,16 +17,24 @@ MONTH = date.today().strftime("%b-%Y")
 def get_cwl_clans():
   try:
     response = requests.get(f'https://api.clashofclans.com/v1/clans/%23{CLAN_TAG}/currentwar/leaguegroup', headers = headers)
+    response.raise_for_status()
     clan_data = response.json()
     rounds = []
     for round in clan_data.get('rounds',[]):
         if round['warTags'] != ['#0', '#0', '#0', '#0']:
             rounds.append(round['warTags'])
+    print(f'{len(rounds)} rounds retrieved')
+
+    return rounds
+  
+  except requests.exceptions.HTTPError as e:
+    # Print the exception message when the status code is not in the 200-299 range
+    print(f"HTTP error occurred: {e}")
+    print(response.json())
+  
   except Exception as e:
       print(f'An error has occured: {e}')
-  finally:
-      print(f'{len(rounds)} rounds retrieved')
-  return rounds
+      
 
 def get_round_matchup(rounds, month):
   round_no = 0
@@ -36,6 +44,7 @@ def get_round_matchup(rounds, month):
         war_tag = matchup[1:]
         try:
             response = requests.get(f'https://api.clashofclans.com/v1/clanwarleagues/wars/%23{war_tag}', headers = headers)
+            response.raise_for_status()
             war = response.json()
             clan1 = war.get('clan', [])
             clan2 = war.get('opponent', [])
@@ -51,6 +60,7 @@ def get_round_matchup(rounds, month):
                 enemy_clan = clan1
             if war.get('state') == 'preparation':
                 continue
+
             # Storing our clan's data
             clan_data = []
             our_columns = ['Position','Tag', 'Name', 'Townhall','Stars','Percentage','Opponent']
@@ -79,6 +89,11 @@ def get_round_matchup(rounds, month):
             clans.to_csv(filename, index=False)
             print(f'Round {round_no} successfully saved at {filename}')
         
+        except requests.exceptions.HTTPError as e:
+            # Print the exception message when the status code is not in the 200-299 range
+            print(f"HTTP error occurred: {e}")
+            print(response.json())
+        
         except Exception as e:
             print(f'An error has occured: {e}')
   
@@ -98,9 +113,16 @@ def store_attacks(member):
 def get_clan_data(month):
     try:
         response = requests.get(f'https://api.clashofclans.com/v1/clans/%23{CLAN_TAG}', headers = headers)
+        response.raise_for_status()
         clan_data = response.json()
         data = []
         columns = ['Tag', 'Name', 'Total Stars', 'Total Percentage', 'Bonus Awarded', 'Demerit']
+        attack = []
+        i = 1
+        while i <= 7:
+            attack.append(f'Attack {i}')
+            i += 1
+        # columns.extend(attack[:])
         for member in clan_data.get('memberList', []):
             tag = member['tag']
             name = member['name']
@@ -108,12 +130,20 @@ def get_clan_data(month):
             total_percent = 0
             bonus = 0
             demerit = 0
+            attack = (None,None,None)
             data.append((tag, name, total_stars, total_percent, bonus, demerit))
         clan_data = pd.DataFrame(data, columns=columns)
         filename = f'{month}_Summary.csv'
         clan_data.to_csv(filename, index=False)
         print(f'Clan data successfully retrieved and saved at {filename}')
+
         return clan_data
+    
+    except requests.exceptions.HTTPError as e:
+        # Print the exception message when the status code is not in the 200-299 range
+        print(f"HTTP error occurred: {e}")
+        print(response.json())
+    
     except Exception as e:
         print(f'An error has occured: {e}')
 
@@ -127,16 +157,21 @@ def calculate_score():
         print(f'An error has occured: {e}')
 
     round = 0
+    current_round = 1
     for file in os.listdir(directory):
         filename = os.path.join(directory, file)
-        if file == '.gitkeep':
-            continue
+
         try:
             round_data = pd.read_csv(filename)
             print(f'File {file} opened successfully')
+            
         except Exception as e:
             print(f'An error has occured: {e}')
+        
+        if not file.endswith('.csv'):
+            continue
         round += 1
+        
         for _, member in round_data.iterrows():
             tag = member['Tag']
             stars = member['Stars']
@@ -157,6 +192,11 @@ def calculate_score():
                 elif opp_th < townhall and stars < 3:
                     demerit += 1
 
+                # # Store attack data for each round
+                # attack = pd.Series([(stars, percentage, opp_th)])
+                # print(attack)
+                
+
                 # Retrieve current values
                 current_stars = summary.loc[summary['Tag']==tag, 'Total Stars'].values[0]
                 current_percentage = summary.loc[summary['Tag']==tag, 'Total Percentage'].values[0]
@@ -174,6 +214,10 @@ def calculate_score():
                 summary.loc[summary['Tag']==tag, 'Total Percentage'] = new_percentage
                 summary.loc[summary['Tag']==tag, 'Bonus Awarded'] = new_bonus
                 summary.loc[summary['Tag']==tag, 'Demerit'] = new_demerit
+                # summary.loc[summary['Tag']==tag, f'Attack {current_round}'] = attack
+
+        current_round += 1
+
     merge = []
     round = [round for i in range(0,len(summary)+1)]
     position = np.arange(1,len(summary)+1,1,dtype=int).tolist()
