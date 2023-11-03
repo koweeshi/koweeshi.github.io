@@ -245,8 +245,8 @@ def calculate_score():
 
 rounds = get_cwl_clans()
 flag = get_round_matchup(rounds, MONTH)
-if not os.path.exists(f'{MONTH}_Summary.csv'):
-    get_clan_data(MONTH)
-# get_clan_data(MONTH)
+# if not os.path.exists(f'{MONTH}_Summary.csv'):
+#     get_clan_data(MONTH)
+get_clan_data(MONTH)
 if flag:
     calculate_score()
