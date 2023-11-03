@@ -12,10 +12,10 @@ def refresh():
     while True:
         print('Retrieving data...')
         rounds = coc.get_cwl_clans()
-        flag = coc.get_round_matchup(rounds, MONTH)
+        flag = coc.get_round_matchup(rounds, coc.MONTH)
         # if not os.path.exists(f'{MONTH}_Summary.csv'):
         #     get_clan_data(MONTH)
-        coc.get_clan_data(MONTH)
+        coc.get_clan_data(coc.MONTH)
         if flag:
             coc.calculate_score()
         df = pd.read_csv(f"{coc.MONTH}_Summary.csv")
