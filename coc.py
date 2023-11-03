@@ -4,10 +4,10 @@ from datetime import date
 import os
 import numpy as np
 
-# API_KEY = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjgwZjU1YmQ3LTliMzMtNDA1YS1iMWM0LTUzMDM2NDA1YThjMiIsImlhdCI6MTY5NjI5NjkzOCwic3ViIjoiZGV2ZWxvcGVyL2ZkNTIzYmZhLTQyZDEtOWU1OC05OWJhLWI2MTQ2YmYyZGNmZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjI3LjU0LjU5LjE0Il0sInR5cGUiOiJjbGllbnQifV19.VZNruIGMPXpT7tB-9_15-IRLmLiq4hKxZjpJFQXlrh-grzXTOzjJSN8Kenx72qRVZlfJxd2VJsM9V5OQmQI8ug'
+API_KEY = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjgwZjU1YmQ3LTliMzMtNDA1YS1iMWM0LTUzMDM2NDA1YThjMiIsImlhdCI6MTY5NjI5NjkzOCwic3ViIjoiZGV2ZWxvcGVyL2ZkNTIzYmZhLTQyZDEtOWU1OC05OWJhLWI2MTQ2YmYyZGNmZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjI3LjU0LjU5LjE0Il0sInR5cGUiOiJjbGllbnQifV19.VZNruIGMPXpT7tB-9_15-IRLmLiq4hKxZjpJFQXlrh-grzXTOzjJSN8Kenx72qRVZlfJxd2VJsM9V5OQmQI8ug'
 
-"Home Key"
-API_KEY ='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImVkZGNlNmEzLWExYmMtNDVjYi04NjUxLWRmYWVhMGMzYzkwMiIsImlhdCI6MTY5NjE2NzE5Miwic3ViIjoiZGV2ZWxvcGVyL2ZkNTIzYmZhLTQyZDEtOWU1OC05OWJhLWI2MTQ2YmYyZGNmZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjExNS42Ni4xNzEuMzIiXSwidHlwZSI6ImNsaWVudCJ9XX0._iPGDZXfKStoBH0rDZpn9039OZqr2WRpQVJR2Y0XWgiv84cdvB0hPG2dzTQ593r9rM0OlPuWAcSKZ2MaUyBZTA'
+# "Home Key"
+# API_KEY ='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImVkZGNlNmEzLWExYmMtNDVjYi04NjUxLWRmYWVhMGMzYzkwMiIsImlhdCI6MTY5NjE2NzE5Miwic3ViIjoiZGV2ZWxvcGVyL2ZkNTIzYmZhLTQyZDEtOWU1OC05OWJhLWI2MTQ2YmYyZGNmZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjExNS42Ni4xNzEuMzIiXSwidHlwZSI6ImNsaWVudCJ9XX0._iPGDZXfKStoBH0rDZpn9039OZqr2WRpQVJR2Y0XWgiv84cdvB0hPG2dzTQ593r9rM0OlPuWAcSKZ2MaUyBZTA'
 
 headers = {
     'Authorization': f'Bearer {API_KEY}'
@@ -62,7 +62,10 @@ def get_round_matchup(rounds, month):
                 our_clan = clan2
                 enemy_clan = clan1
             if war.get('state') == 'preparation':
-                continue
+                if round_no == 1:
+                    return False
+                else:
+                    continue
 
             # Storing our clan's data
             clan_data = []
@@ -100,6 +103,8 @@ def get_round_matchup(rounds, month):
         except Exception as e:
             print(f'An error has occured: {e}')
   
+  return True
+
 def store_attacks(member):
     attack = member.get('attacks')
     if attack:
@@ -163,6 +168,9 @@ def calculate_score():
     current_round = 1
     for file in os.listdir(directory):
         filename = os.path.join(directory, file)
+
+        if file[:8] != MONTH:
+            continue
 
         try:
             round_data = pd.read_csv(filename)
@@ -230,12 +238,15 @@ def calculate_score():
     summary = summary.sort_values(by=['Total Stars', 'Total Percentage'], ascending=False, ignore_index=True)
     summary = pd.concat([merge, summary],axis=1)
     summary.to_csv(f'{MONTH}_Summary.csv', index=False)
-    summary.to_csv(f'C:/Users/Khosy/Documents/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
-    # summary.to_csv(f'/home/mind04/Documents/COC Project/{MONTH}_Summary.csv', index=False)
+    # summary.to_csv(f'C:/Users/Khosy/Documents/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
+    summary.to_csv(f'/media/mind04/E98B-58F3/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
     print(f'File {MONTH}_Summary.csv has been updated')
 
 
 rounds = get_cwl_clans()
-get_round_matchup(rounds, MONTH)
-get_clan_data(MONTH)
-calculate_score()
+flag = get_round_matchup(rounds, MONTH)
+if not os.path.exists(f'{MONTH}_Summary.csv'):
+    get_clan_data(MONTH)
+# get_clan_data(MONTH)
+if flag:
+    calculate_score()

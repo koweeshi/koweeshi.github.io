@@ -11,10 +11,7 @@ app.config['STATIC_FOLDER'] = 'static'
 def refresh():
     while True:
         print('Retrieving data...')
-        rounds = coc.get_cwl_clans()
-        coc.get_round_matchup(rounds, coc.MONTH)
-        coc.get_clan_data(coc.MONTH)
-        coc.calculate_score()
+        import coc
         df = pd.read_csv(f"{coc.MONTH}_Summary.csv")
         print('Data refreshed')
         last = datetime.now().strftime('%c')
