@@ -20,7 +20,7 @@ def refresh():
             coc.calculate_score()
         df = pd.read_csv(f"{coc.MONTH}_Summary.csv")
         print('Data refreshed')
-        last = datetime.now().strftime('%c')
+        last = datetime.now().strftime('%H:%M %d-%b-%Y')
         print(f'Last Update: {last}')
         time.sleep(300)
 

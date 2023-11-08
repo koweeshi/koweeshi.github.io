@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-from datetime import date
+from datetime import date, datetime
 import os
 import numpy as np
 import time
@@ -173,7 +173,7 @@ def get_clan_data(month):
             total_percent = 0
             bonus = 0
             demerit = 0
-            attacks = '0/0'
+            attacks = 0
             data.append((tag, name, total_stars, total_percent, bonus, demerit, attacks))
         clan_data = pd.DataFrame(data, columns=columns)
         
@@ -235,7 +235,11 @@ def calculate_score():
                 if opp_th > townhall and stars >= 1:
                     bonus += 1
                 elif opp_th < townhall and stars < 3:
-                    demerit += 1              
+                    demerit += 1
+
+                attack = summary.loc[summary['Tag']==tag, 'Attacks'].values[0]
+                new_attack = attack + 1
+                summary.loc[summary['Tag']==tag, 'Attacks'] = new_attack
 
                 # Retrieve current values
                 current_stars = summary.loc[summary['Tag']==tag, 'Total Stars'].values[0]
@@ -266,6 +270,8 @@ def calculate_score():
     merge = pd.DataFrame(merge, columns=['Round','Position'])
     summary = summary.sort_values(by=['Total Stars', 'Total Percentage'], ascending=False, ignore_index=True)
     summary = pd.concat([merge, summary],axis=1)
+    update = datetime.now().strftime("%H:%M %d-%b-%Y")
+    summary['Update'] = update
     summary.to_csv(f'{MONTH}_Summary.csv', index=False)
     # summary.to_csv(f'C:/Users/Khosy/Documents/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
     summary.to_csv(f'/media/mind04/E98B-58F3/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
