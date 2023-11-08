@@ -196,7 +196,8 @@ def calculate_score():
         print(f'An error has occured: {e}')
 
     round = 0
-    current_round = 1
+    data = {}
+    player_data = {}
     for file in os.listdir(directory):
         filename = os.path.join(directory, file)
 
@@ -215,6 +216,7 @@ def calculate_score():
         round += 1
         
         for _, member in round_data.iterrows():
+            name = member['Name']
             tag = member['Tag']
             stars = member['Stars']
             townhall = member['Townhall']
@@ -236,16 +238,26 @@ def calculate_score():
                     bonus += 1
                 elif opp_th < townhall and stars < 3:
                     demerit += 1
-
-                attack = summary.loc[summary['Tag']==tag, 'Attacks'].values[0]
-                new_attack = attack + 1
+                
+                # Store number of attacks
+                num_attack = summary.loc[summary['Tag']==tag, 'Attacks'].values[0]
+                new_attack = num_attack + 1
                 summary.loc[summary['Tag']==tag, 'Attacks'] = new_attack
-
+                
                 # Retrieve current values
                 current_stars = summary.loc[summary['Tag']==tag, 'Total Stars'].values[0]
                 current_percentage = summary.loc[summary['Tag']==tag, 'Total Percentage'].values[0]
                 current_bonus = summary.loc[summary['Tag']==tag, 'Bonus Awarded'].values[0]
                 current_demerit = summary.loc[summary['Tag']==tag, 'Demerit'].values[0]
+                
+                # Store attacks into json
+                attack = {}
+                attack['Stars'] = str(member['Stars'])
+                attack['Percentage'] = str(member['Percentage'])
+                attack['Opp Townhall'] = str(opp_th)
+                player_data[f'Attack {round}'] = attack
+                data[f'{name}'] = player_data
+
 
                 # Replace with new values
                 stars = stars + bonus - demerit
@@ -258,10 +270,7 @@ def calculate_score():
                 summary.loc[summary['Tag']==tag, 'Total Percentage'] = new_percentage
                 summary.loc[summary['Tag']==tag, 'Bonus Awarded'] = new_bonus
                 summary.loc[summary['Tag']==tag, 'Demerit'] = new_demerit
-                # summary.loc[summary['Tag']==tag, f'Attack {current_round}'] = attack
-
-        current_round += 1
-
+                
     merge = []
     round = [round for i in range(0,len(summary)+1)]
     position = np.arange(1,len(summary)+1,1,dtype=int).tolist()
@@ -276,6 +285,8 @@ def calculate_score():
     # summary.to_csv(f'C:/Users/Khosy/Documents/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
     summary.to_csv(f'/media/mind04/E98B-58F3/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
     print(f'File {MONTH}_Summary.csv has been updated')
+    with open('data.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
 
 # rounds = get_cwl_clans()
@@ -285,3 +296,4 @@ def calculate_score():
 # get_clan_data(MONTH)
 # if flag:
 #     calculate_score()
+# calculate_score()
