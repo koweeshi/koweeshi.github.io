@@ -183,6 +183,33 @@ def get_clan_data(month):
     else:
         print(f'Base file exists at {filename}')
 
+def create_json():
+    directory = 'data'
+    
+    try:
+        filename = os.path.join(directory, f'BASE_{MONTH}_Summary.csv')
+        summary = pd.read_csv(filename)
+        print(f'File {filename} opened successfully')
+
+    except Exception as e:
+        print(f'An error has occured: {e}')
+
+    template = {
+        'Attack 1': [],
+        'Attack 2': [],
+        'Attack 3': [],
+        'Attack 4': [],
+        'Attack 5': [],
+        'Attack 6': [],
+        'Attack 7': []
+    }
+    data = {}
+    for _, member in summary.iterrows():
+        name = member['Name']
+        data[f'{name}'] = template
+    with open('data.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
 # Calculate score for each member each round
 def calculate_score():
     directory = 'data'
@@ -194,10 +221,16 @@ def calculate_score():
     
     except Exception as e:
         print(f'An error has occured: {e}')
+    
+    try:
+        with open('data.json', 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        print(f'File {filename} opened successfully')
+    
+    except Exception as e:
+        print(f'An error has occured: {e}')
 
     round = 0
-    data = {}
-    player_data = {}
     for file in os.listdir(directory):
         filename = os.path.join(directory, file)
 
@@ -222,41 +255,47 @@ def calculate_score():
             townhall = member['Townhall']
             percentage = member['Percentage']
             opponent = member['Opponent']
-
+            
             if type(opponent) == str:
                 opp_th = round_data.loc[round_data['Tag.1']==opponent, 'Townhall.1'].values[0]
             else:
                 opp_th = None
-            
-            if opp_th:
 
-                # Store member's attacks into json if opp exists
-                
+            if opp_th:
                 bonus = 0
                 demerit = 0
+
                 if opp_th > townhall and stars >= 1:
                     bonus += 1
                 elif opp_th < townhall and stars < 3:
                     demerit += 1
+
+                # Create a new player_data dictionary for each player
+                player_data = {}
                 
                 # Store number of attacks
                 num_attack = summary.loc[summary['Tag']==tag, 'Attacks'].values[0]
                 new_attack = num_attack + 1
                 summary.loc[summary['Tag']==tag, 'Attacks'] = new_attack
-                
+
                 # Retrieve current values
                 current_stars = summary.loc[summary['Tag']==tag, 'Total Stars'].values[0]
                 current_percentage = summary.loc[summary['Tag']==tag, 'Total Percentage'].values[0]
                 current_bonus = summary.loc[summary['Tag']==tag, 'Bonus Awarded'].values[0]
                 current_demerit = summary.loc[summary['Tag']==tag, 'Demerit'].values[0]
-                
-                # Store attacks into json
+
+                # Store attacks into player_data
                 attack = {}
-                attack['Stars'] = str(member['Stars'])
-                attack['Percentage'] = str(member['Percentage'])
+                attack['Stars'] = str(stars)
+                attack['Percentage'] = str(percentage)
                 attack['Opp Townhall'] = str(opp_th)
                 player_data[f'Attack {round}'] = attack
-                data[f'{name}'] = player_data
+                print(data[f'{name}'])
+                # Add player_data to the data dictionary with the player's name as the key
+                data[f'{name}'][f'Attack {round}'] = player_data
+                # print(data)
+                with open('data.json', 'w', encoding='utf-8') as f:
+                    json.dump(data, f, ensure_ascii=False, indent=4)
 
 
                 # Replace with new values
@@ -270,6 +309,8 @@ def calculate_score():
                 summary.loc[summary['Tag']==tag, 'Total Percentage'] = new_percentage
                 summary.loc[summary['Tag']==tag, 'Bonus Awarded'] = new_bonus
                 summary.loc[summary['Tag']==tag, 'Demerit'] = new_demerit
+
+        time.sleep(5)
                 
     merge = []
     round = [round for i in range(0,len(summary)+1)]
@@ -296,4 +337,5 @@ def calculate_score():
 # get_clan_data(MONTH)
 # if flag:
 #     calculate_score()
-# calculate_score()
+create_json()
+calculate_score()

@@ -1,994 +1,1316 @@
 {
-    "Linlook": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
     "lunatic": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "74",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "94",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "81",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "14"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "Raven": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "76",
+                "Opp Townhall": "15"
+            }
         },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+        "Attack 7": []
     },
     "Brian": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "76",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "14"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "95",
+                "Opp Townhall": "14"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "76",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "14"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "®️lunatic®️": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "90",
+                "Opp Townhall": "15"
+            }
         },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "✨MVP✨": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "3Hours": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "yishun": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "我家MYHOUSE": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+        "Attack 7": []
     },
     "Shinikigami": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "1",
+                "Percentage": "40",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "2",
+                "Percentage": "85",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "64",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "73",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "1",
+                "Percentage": "80",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
     },
-    "SacredX": {
+    "Linlook": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "63",
+                "Opp Townhall": "15"
+            }
         },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
+        "Attack 2": [],
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "83",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "93",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "Podeido": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 6": {
+                "Stars": "0",
+                "Percentage": "25",
+                "Opp Townhall": "15"
+            }
         },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+        "Attack 7": []
     },
     "Mr. Tess": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "1",
+                "Percentage": "42",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "1",
+                "Percentage": "51",
+                "Opp Townhall": "14"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "1",
+                "Percentage": "57",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "66",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
+    },
+    "SacredX": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "0",
+                "Percentage": "34",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "1",
+                "Percentage": "75",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "83",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "79",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "1",
+                "Percentage": "60",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
+    },
+    "3Hours": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "0",
+                "Percentage": "34",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "1",
+                "Percentage": "73",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "70",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 5": {
+            "Attack 5": {
+                "Stars": "1",
+                "Percentage": "60",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "90",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 7": []
+    },
+    "✨MVP✨": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "64",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "2",
+                "Percentage": "73",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "1",
+                "Percentage": "53",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 4": [],
+        "Attack 5": {
+            "Attack 5": {
+                "Stars": "1",
+                "Percentage": "52",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 6": [],
+        "Attack 7": []
     },
     "harbourfront": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "64",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "1",
+                "Percentage": "61",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "0",
+                "Percentage": "39",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "1",
+                "Percentage": "62",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "1",
+                "Percentage": "78",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
     },
-    "tengah": {
+    "Raven": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "56",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "82",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "93",
+                "Opp Townhall": "14"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "RaveN": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "52",
+                "Opp Townhall": "15"
+            }
         },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "我啊公家Grandpahome": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "tonytonychopper": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "niconicorobin": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "seasaurus": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
-    },
-    "bedok": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+        "Attack 7": []
     },
     "woofwentdog": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "1",
+                "Percentage": "52",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "2",
+                "Percentage": "85",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "88",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "69",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "77",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "62",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 7": []
+    },
+    "niconicorobin": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "62",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "2",
+                "Percentage": "81",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "68",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 5": {
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "60",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "73",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
+    },
+    "bedok": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "0",
+                "Percentage": "37",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "2",
+                "Percentage": "95",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "73",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "0",
+                "Percentage": "44",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 5": [],
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "1",
+                "Percentage": "53",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 7": []
+    },
+    "tengah": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "0",
+                "Percentage": "41",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "2",
+                "Percentage": "92",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "58",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "1",
+                "Percentage": "77",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 5": [],
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "1",
+                "Percentage": "59",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
+    },
+    "我家MYHOUSE": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "0",
+                "Percentage": "46",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "2",
+                "Percentage": "87",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "95",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "69",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 5": {
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "69",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "66",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
+    },
+    "Lee Hsien Loong": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "83",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 5": {
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "82",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "67",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 7": []
+    },
+    "ACAP": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "1",
+                "Percentage": "66",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
+    },
+    "tonytonychopper": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "58",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "1",
+                "Percentage": "75",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "1",
+                "Percentage": "78",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "0",
+                "Percentage": "49",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 5": {
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "86",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "1",
+                "Percentage": "45",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
     },
     "我外婆家GrannyHouse": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "1",
+                "Percentage": "47",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "58",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "74",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "1",
+                "Percentage": "47",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "1",
+                "Percentage": "54",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 7": []
     },
-    "Awkurtle": {
+    "Podeido": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "1",
+                "Percentage": "61",
+                "Opp Townhall": "15"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "85",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "72",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "72",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "95",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
+    },
+    "rookie": {
+        "Attack 1": [],
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "2",
+                "Percentage": "57",
+                "Opp Townhall": "11"
+            }
+        },
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
+    },
+    "yishun": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "1",
+                "Percentage": "35",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "94",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "79",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 5": {
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "87",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "62",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
+    },
+    "我啊公家Grandpahome": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "1",
+                "Percentage": "51",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "1",
+                "Percentage": "64",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "83",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 5": {
+            "Attack 5": {
+                "Stars": "1",
+                "Percentage": "74",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "1",
+                "Percentage": "42",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": []
+    },
+    "Twinstar": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
+    },
+    "Unicorn": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
     },
     "poochitaaa": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "0",
+                "Percentage": "45",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "1",
+                "Percentage": "63",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "11"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "72",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 7": []
+    },
+    "®️lunatic®️": {
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "1",
+                "Percentage": "41",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 3": {
+            "Attack 3": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 4": {
+            "Attack 4": {
+                "Stars": "1",
+                "Percentage": "40",
+                "Opp Townhall": "15"
+            }
+        },
+        "Attack 5": {
+            "Attack 5": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 6": {
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "77",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 7": []
+    },
+    "捐兵号": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
     },
     "Sacr3dX": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "0",
+                "Percentage": "28",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "1",
+                "Percentage": "57",
+                "Opp Townhall": "11"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "62",
+                "Opp Townhall": "12"
+            }
         },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
+        "Attack 4": [],
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "78",
+                "Opp Townhall": "11"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "1",
+                "Percentage": "57",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 7": []
+    },
+    "Ghoul": {
+        "Attack 1": [],
+        "Attack 2": {
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "11"
+            }
+        },
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
     },
     "我啊妈家Grandmahaus": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "1",
+                "Percentage": "45",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "68",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "2",
+                "Percentage": "61",
+                "Opp Townhall": "11"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "56",
+                "Opp Townhall": "11"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "94",
+                "Opp Townhall": "11"
+            }
+        },
+        "Attack 7": []
     },
-    "Ghoul": {
+    "seasaurus": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "0",
+                "Percentage": "32",
+                "Opp Townhall": "14"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "1",
+                "Percentage": "55",
+                "Opp Townhall": "12"
+            }
         },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
+        "Attack 3": [],
+        "Attack 4": [],
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "57",
+                "Opp Townhall": "12"
+            }
         },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+        "Attack 6": [],
+        "Attack 7": []
     },
-    "rookie": {
-        "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
-        },
-        "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
-        },
-        "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
-        },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
-        "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
-        },
-        "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+    "Baconbanmi": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
     },
-    "Lee Hsien Loong": {
+    "Awkurtle": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "0",
+                "Percentage": "47",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "74",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
+            "Attack 4": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "2",
+                "Percentage": "72",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "2",
+                "Percentage": "90",
+                "Opp Townhall": "12"
+            }
+        },
+        "Attack 7": []
     },
-    "ACAP": {
+    "RaveN": {
         "Attack 1": {
-            "Stars": "1",
-            "Percentage": "45",
-            "Opp Townhall": "13"
+            "Attack 1": {
+                "Stars": "0",
+                "Percentage": "28",
+                "Opp Townhall": "14"
+            }
         },
         "Attack 2": {
-            "Stars": "2",
-            "Percentage": "57",
-            "Opp Townhall": "11"
+            "Attack 2": {
+                "Stars": "2",
+                "Percentage": "88",
+                "Opp Townhall": "12"
+            }
         },
         "Attack 3": {
-            "Stars": "2",
-            "Percentage": "68",
-            "Opp Townhall": "13"
+            "Attack 3": {
+                "Stars": "2",
+                "Percentage": "52",
+                "Opp Townhall": "13"
+            }
         },
-        "Attack 4": {
-            "Stars": "2",
-            "Percentage": "61",
-            "Opp Townhall": "11"
-        },
+        "Attack 4": [],
         "Attack 5": {
-            "Stars": "2",
-            "Percentage": "56",
-            "Opp Townhall": "11"
+            "Attack 5": {
+                "Stars": "1",
+                "Percentage": "76",
+                "Opp Townhall": "13"
+            }
         },
         "Attack 6": {
-            "Stars": "2",
-            "Percentage": "94",
-            "Opp Townhall": "11"
-        }
+            "Attack 6": {
+                "Stars": "1",
+                "Percentage": "78",
+                "Opp Townhall": "14"
+            }
+        },
+        "Attack 7": []
+    },
+    "JohnWeak": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
+    },
+    "BlackX": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
+    },
+    "Halimah Yacob": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
+    },
+    "Ryewff": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
+    },
+    "nutsiao": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
+    },
+    "Daros Diastima": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
+    },
+    "raven": {
+        "Attack 1": [],
+        "Attack 2": [],
+        "Attack 3": [],
+        "Attack 4": [],
+        "Attack 5": [],
+        "Attack 6": [],
+        "Attack 7": []
     }
 }
