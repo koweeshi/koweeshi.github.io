@@ -10,15 +10,16 @@
 
         .body {
             font-family: 'SupercellMagic', Arial, sans-serif;
-            background-color: #3D2D26;
+            background-color: #000000;
             background-image: url('static/images/back.jpg');
             background-size: cover;
             background-repeat:repeat-y;
+            opacity: 1;
             margin: 0;
             padding: 20px;
         }
 
-        .body::after {
+        /* .body::after {
             content: '';
             position: absolute;
             top: 0;
@@ -27,7 +28,7 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.4);
             z-index: -1;
-        }
+        } */
 
         .header {
             background-image: url('static/images/cover.jpg');
@@ -54,6 +55,9 @@
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.3); /* Background color with transparency */
+            background-image: url('static/images/bg.gif');
+            background-size: cover;
+            opacity: 0.5;
             z-index: 1; /* Place the pseudo-element behind the header content */
         }
 
@@ -268,6 +272,9 @@
     </style>
 </head>
     <body class = 'body'>
+        <div class = 'gif'>
+
+        </div>
         <div class = 'header'>
             <div class = 'logo'>
                 <img src="static/images/clanbadge.png", alt="Badge">
@@ -289,7 +296,7 @@
             
         </div>
 
-        <table id = 'scoreboard'>
+        <table id="scoreboard">
             <tr>
                 <th>Position</th>
                 <th>Player</th>
@@ -298,9 +305,10 @@
                 <th>Bonuses</th>
                 <th>Demerit</th>
                 <th>Attacks</th>
+                <th>Details</th> <!-- New column for the toggle button -->
             </tr>
             {% for record in data %}
-            <tr>
+            <tr class="expandable-row">
                 <td>{{ record['Position'] }}</td>
                 <td>{{ record['Name'] }}</td>
                 <td>{{ record['Total Stars'] }}</td>
@@ -308,10 +316,9 @@
                 <td>{{ record['Bonus Awarded'] }}</td>
                 <td>{{ record['Demerit'] }}</td>
                 <td>{{ record['Attacks'] }}/{{ limited_data[0]['Round'] }}</td>
+                <td><button class="toggle-button">Details</button></td> <!-- Toggle button -->
             </tr>
             {% endfor %}
-
-
         </table>
 
         <div class="center-container">
@@ -342,6 +349,7 @@
                         <td>${record['Bonus Awarded']}</td>
                         <td>${record['Demerit']}</td>
                         <td>${record['Attacks']}/${record['Round']}
+                        <td><button class="toggle-button">Details</button></td>
                     `;
                     table.appendChild(newRow);
                 }
@@ -372,6 +380,37 @@
             if (fullData.length > 25) {
                 showMoreBtn.style.display = 'block';
             }
+
+            // Function to handle row expansion and details display
+            function handleRowExpansion(event) {
+                const row = event.target.closest('.expandable-row');
+                if (!row) return;
+
+                // Check if the row is expanded
+                const isExpanded = row.classList.contains('expanded');
+
+                // Toggle the row expansion
+                if (isExpanded) {
+                    row.classList.remove('expanded');
+                } else {
+                    // Expand the row and display details
+                    row.classList.add('expanded');
+                    const position = row.cells[0].textContent;
+                    // Retrieve details from your JSON data based on the position or other identifier
+                    const details = attack_data.find((item) => item['Position'] === position);
+                    if (details) {
+                        // Add the details to a new cell in the row
+                        const detailsCell = row.insertCell(-1);
+                        detailsCell.colSpan = 7; // Colspan to span the entire row
+                        detailsCell.textContent = `Stars: ${details['Stars']}, Percentage: ${details['Percentage']}, Enemy Townhall: ${details['EnemyTownhall']}`;
+                    }
+                }
+            }
+
+            const toggleButtons = document.querySelectorAll('.toggle-button');
+            toggleButtons.forEach((button) => {
+                button.addEventListener('click', handleRowExpansion);
+            });
         </script>
     </body>
 </html>
