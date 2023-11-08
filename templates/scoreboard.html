@@ -328,6 +328,7 @@
         <script>
             var limitedData = JSON.parse('{{ limited_data | tojson | safe }}');
             var fullData = JSON.parse('{{ full_data | tojson | safe }}');
+            var attackData = JSON.parse('{{ attack_data | tojson | safe }}')
         </script>
 
         <script>
@@ -397,7 +398,7 @@
                     row.classList.add('expanded');
                     const position = row.cells[0].textContent;
                     // Retrieve details from your JSON data based on the position or other identifier
-                    const details = attack_data.find((item) => item['Position'] === position);
+                    const details = attackData.find((item) => item['Position'] === position);
                     if (details) {
                         // Add the details to a new cell in the row
                         const detailsCell = row.insertCell(-1);

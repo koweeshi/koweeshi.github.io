@@ -223,6 +223,7 @@ def calculate_score():
         print(f'An error has occured: {e}')
     
     try:
+        filename = 'data.json'
         with open('data.json', 'r', encoding='utf-8') as f:
             data = json.load(f)
         print(f'File {filename} opened successfully')
@@ -290,13 +291,9 @@ def calculate_score():
                 attack['Percentage'] = str(percentage)
                 attack['Opp Townhall'] = str(opp_th)
                 player_data[f'Attack {round}'] = attack
-                print(data[f'{name}'])
+
                 # Add player_data to the data dictionary with the player's name as the key
                 data[f'{name}'][f'Attack {round}'] = player_data
-                # print(data)
-                with open('data.json', 'w', encoding='utf-8') as f:
-                    json.dump(data, f, ensure_ascii=False, indent=4)
-
 
                 # Replace with new values
                 stars = stars + bonus - demerit
@@ -309,8 +306,6 @@ def calculate_score():
                 summary.loc[summary['Tag']==tag, 'Total Percentage'] = new_percentage
                 summary.loc[summary['Tag']==tag, 'Bonus Awarded'] = new_bonus
                 summary.loc[summary['Tag']==tag, 'Demerit'] = new_demerit
-
-        time.sleep(5)
                 
     merge = []
     round = [round for i in range(0,len(summary)+1)]
@@ -337,5 +332,5 @@ def calculate_score():
 # get_clan_data(MONTH)
 # if flag:
 #     calculate_score()
-create_json()
-calculate_score()
+# create_json()
+# calculate_score()
