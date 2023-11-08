@@ -91,6 +91,16 @@
             z-index: 1;
         }
 
+        .header h4 {
+            color: #ffffff; /* Text color */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+            font-size: small;
+            text-align: right;
+            vertical-align: text-bottom;
+            position: relative;
+            z-index: 1;
+        }
+
         /* Add rounded borders and gradient background to table rows */
         table {
             width: 90%;
@@ -203,6 +213,7 @@
             <h1>Clan War League</h1>
             <h2>November 2023 Season</h2>
             <h3>Round {{ limited_data[0]['Round'] }}/7</h3>
+            <h4>Last Updated: (feature being added)</h4>
         </div>
 
         <table id = 'scoreboard'>
