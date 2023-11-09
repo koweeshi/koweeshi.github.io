@@ -87,14 +87,17 @@ def get_round_matchup(rounds, month):
         # If the first round is preparation stage, flag as false to avoid score calculation
         if war.get('state') == 'preparation':
             if round_no == 1:
-                return False
+                return False, False
             else:
                 continue
         
         # If war has ended skip data storage
         if war.get('state') == 'warEnded':
             print(f'Round {round_no} ended')
-            continue
+            if round_no < 7:
+                continue
+            else:
+                pass
 
         # Storing our clan's data
         clan_data = []
@@ -123,8 +126,12 @@ def get_round_matchup(rounds, month):
         filename = f'data/{month}_round{round_no}.csv'
         clans.to_csv(filename, index=False)
         print(f'Round {round_no} successfully saved at {filename}')
-  
-  return True
+
+        if round_no == 7:
+            print('CWL has ended')
+            return True, True
+
+  return True, False
 
 # Function to store the member's attack
 def store_attacks(member):

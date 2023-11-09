@@ -13,7 +13,7 @@ def refresh():
     while True:
         print('Retrieving data...')
         rounds = coc.get_cwl_clans()
-        flag = coc.get_round_matchup(rounds, coc.MONTH)
+        flag, end = coc.get_round_matchup(rounds, coc.MONTH)
         # if not os.path.exists(f'{MONTH}_Summary.csv'):
         #     get_clan_data(MONTH)
         coc.get_clan_data(coc.MONTH)
@@ -23,11 +23,14 @@ def refresh():
         print('Data refreshed')
         last = datetime.now().strftime('%H:%M %d-%b-%Y')
         print(f'Last Update: {last}')
+        if end:
+            refresh_thread.stop()
         time.sleep(300)
 
 refresh_thread = threading.Thread(target=refresh)
 refresh_thread.daemon = True
 refresh_thread.start()
+
 
 @app.route('/') 
 def scoreboard():
@@ -39,4 +42,4 @@ def scoreboard():
     return render_template('scoreboard.html', limited_data=limited_data, full_data=full_data, attack_data=attack_data)
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0", port=5500, threaded = True)
+    app.run(host="0.0.0.0", port=5600, threaded = True)

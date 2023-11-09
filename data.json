@@ -438,6 +438,13 @@
                 "Percentage": "66",
                 "Opp Townhall": "13"
             }
+        },
+        "Attack 7": {
+            "Attack 7": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
         }
     },
     "Shinikigami": {
@@ -682,6 +689,13 @@
                 "Percentage": "78",
                 "Opp Townhall": "13"
             }
+        },
+        "Attack 7": {
+            "Attack 7": {
+                "Stars": "2",
+                "Percentage": "99",
+                "Opp Townhall": "12"
+            }
         }
     },
     "tengah": {
@@ -822,6 +836,13 @@
             "Attack 6": {
                 "Stars": "1",
                 "Percentage": "42",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": {
+            "Attack 7": {
+                "Stars": "3",
+                "Percentage": "100",
                 "Opp Townhall": "13"
             }
         }
@@ -1471,6 +1492,13 @@
             "Attack 6": {
                 "Stars": "1",
                 "Percentage": "66",
+                "Opp Townhall": "13"
+            }
+        },
+        "Attack 7": {
+            "Attack 7": {
+                "Stars": "3",
+                "Percentage": "100",
                 "Opp Townhall": "13"
             }
         }
