@@ -36,7 +36,7 @@ def get_cwl_clans():
         except requests.exceptions.HTTPError as e:
             # Print the exception message when the status code is not in the 200-299 range
             print(f"HTTP error occurred: {e}")
-            print(response.json())
+            # print(response.json())
         
         except Exception as e:
             print(f'An error has occured: {e}')
@@ -64,7 +64,7 @@ def get_round_matchup(rounds, month):
             except requests.exceptions.HTTPError as e:
                 # Print the exception message when the status code is not in the 200-299 range
                 print(f"HTTP error occurred: {e}")
-                print(response.json())
+                # print(response.json())
             
             except Exception as e:
                 print(f'An error has occured: {e}')
@@ -155,7 +155,7 @@ def get_clan_data(month):
             except requests.exceptions.HTTPError as e:
                 # Print the exception message when the status code is not in the 200-299 range
                 print(f"HTTP error occurred: {e}")
-                print(response.json())
+                # print(response.json())
             
             except Exception as e:
                 print(f'An error has occured: {e}')
