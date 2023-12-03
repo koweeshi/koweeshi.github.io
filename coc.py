@@ -6,10 +6,10 @@ import numpy as np
 import time
 import json
 
-API_KEY = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjgwZjU1YmQ3LTliMzMtNDA1YS1iMWM0LTUzMDM2NDA1YThjMiIsImlhdCI6MTY5NjI5NjkzOCwic3ViIjoiZGV2ZWxvcGVyL2ZkNTIzYmZhLTQyZDEtOWU1OC05OWJhLWI2MTQ2YmYyZGNmZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjI3LjU0LjU5LjE0Il0sInR5cGUiOiJjbGllbnQifV19.VZNruIGMPXpT7tB-9_15-IRLmLiq4hKxZjpJFQXlrh-grzXTOzjJSN8Kenx72qRVZlfJxd2VJsM9V5OQmQI8ug'
+# API_KEY = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjgwZjU1YmQ3LTliMzMtNDA1YS1iMWM0LTUzMDM2NDA1YThjMiIsImlhdCI6MTY5NjI5NjkzOCwic3ViIjoiZGV2ZWxvcGVyL2ZkNTIzYmZhLTQyZDEtOWU1OC05OWJhLWI2MTQ2YmYyZGNmZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjI3LjU0LjU5LjE0Il0sInR5cGUiOiJjbGllbnQifV19.VZNruIGMPXpT7tB-9_15-IRLmLiq4hKxZjpJFQXlrh-grzXTOzjJSN8Kenx72qRVZlfJxd2VJsM9V5OQmQI8ug'
 
 # "Home Key"
-# API_KEY ='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImVkZGNlNmEzLWExYmMtNDVjYi04NjUxLWRmYWVhMGMzYzkwMiIsImlhdCI6MTY5NjE2NzE5Miwic3ViIjoiZGV2ZWxvcGVyL2ZkNTIzYmZhLTQyZDEtOWU1OC05OWJhLWI2MTQ2YmYyZGNmZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjExNS42Ni4xNzEuMzIiXSwidHlwZSI6ImNsaWVudCJ9XX0._iPGDZXfKStoBH0rDZpn9039OZqr2WRpQVJR2Y0XWgiv84cdvB0hPG2dzTQ593r9rM0OlPuWAcSKZ2MaUyBZTA'
+API_KEY ='eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6ImVkZGNlNmEzLWExYmMtNDVjYi04NjUxLWRmYWVhMGMzYzkwMiIsImlhdCI6MTY5NjE2NzE5Miwic3ViIjoiZGV2ZWxvcGVyL2ZkNTIzYmZhLTQyZDEtOWU1OC05OWJhLWI2MTQ2YmYyZGNmZCIsInNjb3BlcyI6WyJjbGFzaCJdLCJsaW1pdHMiOlt7InRpZXIiOiJkZXZlbG9wZXIvc2lsdmVyIiwidHlwZSI6InRocm90dGxpbmcifSx7ImNpZHJzIjpbIjExNS42Ni4xNzEuMzIiXSwidHlwZSI6ImNsaWVudCJ9XX0._iPGDZXfKStoBH0rDZpn9039OZqr2WRpQVJR2Y0XWgiv84cdvB0hPG2dzTQ593r9rM0OlPuWAcSKZ2MaUyBZTA'
 
 headers = {
     'Authorization': f'Bearer {API_KEY}'
@@ -94,10 +94,13 @@ def get_round_matchup(rounds, month):
         # If war has ended skip data storage
         if war.get('state') == 'warEnded':
             print(f'Round {round_no} ended')
-            if round_no < 7:
-                continue
-            else:
+            if not os.path.exists(f'data/{month}_round{round_no}.csv'):
                 pass
+
+            else:
+                if round_no < 7:
+                    continue
+
 
         # Storing our clan's data
         clan_data = []
@@ -326,18 +329,19 @@ def calculate_score():
     summary['Update'] = update
     summary.to_csv(f'{MONTH}_Summary.csv', index=False)
     # summary.to_csv(f'C:/Users/Khosy/Documents/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
-    summary.to_csv(f'/media/mind04/E98B-58F3/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
+    # summary.to_csv(f'/media/mind04/E98B-58F3/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
+    summary.to_csv(f'f:/coc_cwl_scoreboard{MONTH}_Summary.csv', index=False)
     print(f'File {MONTH}_Summary.csv has been updated')
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 
-# rounds = get_cwl_clans()
-# flag = get_round_matchup(rounds, MONTH)
-# # if not os.path.exists(f'{MONTH}_Summary.csv'):
-# #     get_clan_data(MONTH)
-# get_clan_data(MONTH)
-# if flag:
-#     calculate_score()
-# create_json()
-# calculate_score()
+rounds = get_cwl_clans()
+flag = get_round_matchup(rounds, MONTH)
+# if not os.path.exists(f'{MONTH}_Summary.csv'):
+#     get_clan_data(MONTH)
+get_clan_data(MONTH)
+if flag:
+    calculate_score()
+create_json()
+calculate_score()
