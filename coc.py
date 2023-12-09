@@ -330,18 +330,18 @@ def calculate_score():
     summary.to_csv(f'{MONTH}_Summary.csv', index=False)
     # summary.to_csv(f'C:/Users/Khosy/Documents/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
     # summary.to_csv(f'/media/mind04/E98B-58F3/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
-    summary.to_csv(f'f:/coc_cwl_scoreboard{MONTH}_Summary.csv', index=False)
+    summary.to_csv(f'f:/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
     print(f'File {MONTH}_Summary.csv has been updated')
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
 
-rounds = get_cwl_clans()
-flag = get_round_matchup(rounds, MONTH)
-# if not os.path.exists(f'{MONTH}_Summary.csv'):
-#     get_clan_data(MONTH)
-get_clan_data(MONTH)
-if flag:
-    calculate_score()
-create_json()
-calculate_score()
+# rounds = get_cwl_clans()
+# flag = get_round_matchup(rounds, MONTH)
+# # if not os.path.exists(f'{MONTH}_Summary.csv'):
+# #     get_clan_data(MONTH)
+# get_clan_data(MONTH)
+# if flag:
+#     calculate_score()
+# create_json()
+# calculate_score()

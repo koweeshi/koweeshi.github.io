@@ -1,6 +1,12 @@
 {
     "Linlook": {
-        "Attack 1": [],
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "83",
+                "Opp Townhall": "15"
+            }
+        },
         "Attack 2": {
             "Attack 2": {
                 "Stars": "2",
@@ -15,7 +21,13 @@
         "Attack 7": []
     },
     "lunatic": {
-        "Attack 1": [],
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "99",
+                "Opp Townhall": "15"
+            }
+        },
         "Attack 2": {
             "Attack 2": {
                 "Stars": "3",
@@ -45,7 +57,13 @@
         "Attack 7": []
     },
     "Shinikigami": {
-        "Attack 1": [],
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "13"
+            }
+        },
         "Attack 2": {
             "Attack 2": {
                 "Stars": "3",
@@ -60,7 +78,13 @@
         "Attack 7": []
     },
     "Raven": {
-        "Attack 1": [],
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "15"
+            }
+        },
         "Attack 2": {
             "Attack 2": {
                 "Stars": "2",
@@ -90,7 +114,13 @@
         "Attack 7": []
     },
     "harbourfront": {
-        "Attack 1": [],
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "92",
+                "Opp Townhall": "12"
+            }
+        },
         "Attack 2": {
             "Attack 2": {
                 "Stars": "3",
@@ -126,7 +156,13 @@
         "Attack 7": []
     },
     "SacredX": {
-        "Attack 1": [],
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "2",
+                "Percentage": "77",
+                "Opp Townhall": "14"
+            }
+        },
         "Attack 2": {
             "Attack 2": {
                 "Stars": "3",
@@ -165,7 +201,13 @@
         "Attack 7": []
     },
     "我家MYHOUSE": {
-        "Attack 1": [],
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "14"
+            }
+        },
         "Attack 2": {
             "Attack 2": {
                 "Stars": "3",
@@ -252,7 +294,13 @@
         "Attack 7": []
     },
     "Podeido": {
-        "Attack 1": [],
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "1",
+                "Percentage": "99",
+                "Opp Townhall": "13"
+            }
+        },
         "Attack 2": {
             "Attack 2": {
                 "Stars": "3",
@@ -375,7 +423,13 @@
         "Attack 7": []
     },
     "RaveN": {
-        "Attack 1": [],
+        "Attack 1": {
+            "Attack 1": {
+                "Stars": "3",
+                "Percentage": "100",
+                "Opp Townhall": "12"
+            }
+        },
         "Attack 2": {
             "Attack 2": {
                 "Stars": "3",
