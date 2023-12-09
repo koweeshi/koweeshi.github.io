@@ -330,7 +330,7 @@ def calculate_score():
     summary.to_csv(f'{MONTH}_Summary.csv', index=False)
     # summary.to_csv(f'C:/Users/Khosy/Documents/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
     # summary.to_csv(f'/media/mind04/E98B-58F3/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
-    summary.to_csv(f'f:/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
+    summary.to_csv(f'e:/coc_cwl_scoreboard/{MONTH}_Summary.csv', index=False)
     print(f'File {MONTH}_Summary.csv has been updated')
     with open('data.json', 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
